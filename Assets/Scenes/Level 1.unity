@@ -8347,7 +8347,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1411765, y: 1}
+    m_SensorSize: {x: 1.5992063, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -8534,13 +8534,9 @@ MonoBehaviour:
   jumpGround:
     serializedVersion: 2
     m_Bits: 256
-  spikes:
-    serializedVersion: 2
-    m_Bits: 1024
   jumpForceX: 7
   jumpForceY: 6
   idleTime: 2
-  flip: 0
 --- !u!70 &1408428207
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

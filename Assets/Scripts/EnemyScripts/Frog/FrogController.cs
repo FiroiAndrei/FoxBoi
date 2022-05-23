@@ -56,8 +56,7 @@ public class FrogController : MonoBehaviour
             frogIsDead();
         }
 
-        
-
+    
         if (isIdle)
         {
             currentIdleTime += Time.deltaTime;
@@ -67,11 +66,7 @@ public class FrogController : MonoBehaviour
                 Jump();
                 
             }
-        }
-
-
-
-        
+        }      
 
         if (IsGrounded())
         {

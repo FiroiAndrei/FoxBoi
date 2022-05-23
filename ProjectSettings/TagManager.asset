@@ -11,6 +11,8 @@ TagManager:
   - Enemy
   - GameMusic
   - StartMenu
+  - Frog
+  - Eagle
   layers:
   - Default
   - TransparentFX

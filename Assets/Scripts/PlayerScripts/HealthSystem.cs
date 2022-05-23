@@ -35,9 +35,10 @@ public class HealthSystem : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         FrogController frog = collision.collider.GetComponent<FrogController>();
-        if ((collision.gameObject.tag == "Trap" || collision.gameObject.tag == "Enemy") && healthPoints > 0 )
+
+        if ((collision.gameObject.tag == "Trap" || collision.gameObject.tag == "Frog" || collision.gameObject.tag == "Eagle") && healthPoints > 0 )
         {
-            if(collision.gameObject.tag == "Enemy")
+            if(collision.gameObject.tag == "Frog")
             {
                 foreach (ContactPoint2D point in collision.contacts)
                 {
@@ -61,20 +62,21 @@ public class HealthSystem : MonoBehaviour
                     hearts[healthPoints].sprite = emptyHeart;
                     damageFromEnemy = false; 
                 }
-            }
-            if(collision.gameObject.tag == "Trap")
+
+            }else if(collision.gameObject.tag == "Eagle" || collision.gameObject.tag == "Trap" )
             {
                 healthPoints -= 1;
                 hearts[healthPoints].sprite = emptyHeart;
                 if(healthPoints >= 1)
                 {
                     hurtSoundEffect.Play();
-                }
+                } 
+
             }
 
             if(healthPoints > 0)
             {
-                if(collision.gameObject.tag == "Enemy")
+                if(collision.gameObject.tag == "Frog")
                 {
                     foreach (ContactPoint2D point in collision.contacts)
                     {
@@ -95,7 +97,7 @@ public class HealthSystem : MonoBehaviour
                         }
                     } 
                 }
-                else
+                else if (collision.gameObject.tag == "Trap" || collision.gameObject.tag == "Eagle" )
                 {
                     if(collision.gameObject.transform.position.x > transform.position.x)  
                         trapRight = true; //trap is to right so i move to right

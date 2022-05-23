@@ -18,7 +18,7 @@ public class PlayerDeath : MonoBehaviour
     // Update is called once per frame
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if ((collision.gameObject.tag == "Trap" || collision.gameObject.tag == "Enemy") && GameObject.Find("Player").GetComponent<HealthSystem>().healthPoints <= 1)
+        if ((collision.gameObject.tag == "Trap" || collision.gameObject.tag == "Frog" || collision.gameObject.tag == "Eagle" ) && GameObject.Find("Player").GetComponent<HealthSystem>().healthPoints <= 1)
         {
             Debug.Log(GameObject.Find("Player").GetComponent<HealthSystem>().healthPoints);
             animation.SetTrigger("death");

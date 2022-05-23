@@ -9843,7 +9843,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8932856412996702715, guid: e0ff3931ff00805428bc8bfecced4a81, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Frog
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8932856412996702599, guid: e0ff3931ff00805428bc8bfecced4a81, type: 3}
@@ -15310,7 +15310,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6, y: 1}
+    m_SensorSize: {x: 1.5992293, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

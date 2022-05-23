@@ -13,6 +13,7 @@ public class HealthSystem : MonoBehaviour
     public int healthPoints = 4;
     public bool enemyDead;
     private bool damageFromEnemy = false;
+    private bool frogIsDead = false;
 
     private Renderer rend;
     private Color c;
@@ -20,6 +21,8 @@ public class HealthSystem : MonoBehaviour
     public Image[] hearts;
     public Sprite emptyHeart;
     [SerializeField] private float hurtForce = 11f;
+    [SerializeField] private AudioSource jumpFromEnemySoundEffect;
+    [SerializeField] private AudioSource hurtSoundEffect;
 
     private void Start ()
     {
@@ -62,6 +65,10 @@ public class HealthSystem : MonoBehaviour
             {
                 healthPoints -= 1;
                 hearts[healthPoints].sprite = emptyHeart;
+                if(healthPoints >= 1)
+                {
+                    hurtSoundEffect.Play();
+                }
             }
 
             if(healthPoints > 0)
@@ -73,6 +80,8 @@ public class HealthSystem : MonoBehaviour
                         if(point.normal.y >= 0.9f)
                         {
                             rb.velocity = new Vector2(rb.velocity.x, 15);
+                            jumpFromEnemySoundEffect.Play();
+                            frogIsDead = true;
                             frog.frogIsDead();
                         }
                         else
@@ -93,6 +102,10 @@ public class HealthSystem : MonoBehaviour
                         trapRight = false; //trap is to left so i move to left
                     StartCoroutine ("Hurt");
                 }       
+            }
+            if(healthPoints >= 1 && frogIsDead == false)
+            {
+                hurtSoundEffect.Play();
             }
             
         }

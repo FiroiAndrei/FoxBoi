@@ -21,3 +21,15 @@ Plus 2 membri care s-au retras din echipa :
 
 # Link Youtube
 https://www.youtube.com/watch?v=5rhfUITmuWo&ab_channel=FiroiAndrei
+
+
+# Features
+
+* Simularea miscarii jucatorului in spatiu 2D
+* Abilitatea de a omori inamici in stilul "Mario", sarind pe capul lor
+* Platforme care se misca dupa un sistem de waypoint
+* Inamici cu diverse nivele de dificultate, incepand de la broscute nu prea inteligente, pana la un vulture "vanator" ce foloseste un algoritm de pathfinding
+* Doua tipuri de trap-uri ce incetineste progresul jucatorului
+* Colectibile pretioase, puse in locuri greu accesibile, pentru a adauga un pic de adancime gameplay-ului
+* UI care are 3 butoane : "Start game", "Continue game", "Quit game"; Slide de volume care pastreaza preferinta jucatorului la fiecare nivel
+* 

@@ -19,5 +19,5 @@ Plus 2 membri care s-au retras din echipa :
 ■■■■■■■ ■■■■■■■ (312)
 ■■■■ ■■■■■ ■■■■ (311)
 
-#Link Youtube
+# Link Youtube
 https://www.youtube.com/watch?v=5rhfUITmuWo&ab_channel=FiroiAndrei

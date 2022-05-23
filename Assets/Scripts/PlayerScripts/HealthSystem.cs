@@ -13,7 +13,7 @@ public class HealthSystem : MonoBehaviour
     public int healthPoints = 4;
     public bool enemyDead;
     private bool damageFromEnemy = false;
-    private bool frogIsDead = false;
+    private bool enemyIsDead = false;
 
     private Renderer rend;
     private Color c;
@@ -57,6 +57,7 @@ public class HealthSystem : MonoBehaviour
                 if(damageFromEnemy == true)
                 {
                     healthPoints -= 1;
+                    Debug.Log(healthPoints);
                     hearts[healthPoints].sprite = emptyHeart;
                     damageFromEnemy = false; 
                 }
@@ -81,7 +82,7 @@ public class HealthSystem : MonoBehaviour
                         {
                             rb.velocity = new Vector2(rb.velocity.x, 15);
                             jumpFromEnemySoundEffect.Play();
-                            frogIsDead = true;
+                            enemyIsDead = true;
                             frog.frogIsDead();
                         }
                         else
@@ -103,7 +104,7 @@ public class HealthSystem : MonoBehaviour
                     StartCoroutine ("Hurt");
                 }       
             }
-            if(healthPoints >= 1 && frogIsDead == false)
+            if(healthPoints >= 1 && enemyIsDead == false)
             {
                 hurtSoundEffect.Play();
             }

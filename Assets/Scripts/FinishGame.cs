@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FinishLevel : MonoBehaviour
+public class FinishGame : MonoBehaviour
 {
     // Update is called once per frame
     private void OnTriggerEnter2D(Collider2D col)
@@ -17,6 +17,6 @@ public class FinishLevel : MonoBehaviour
 
     private void CompleteLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Start Menu");
     }
 }

@@ -9805,7 +9805,7 @@ GameObject:
   - component: {fileID: 662355022}
   m_Layer: 9
   m_Name: Eagle
-  m_TagString: Enemy
+  m_TagString: Eagle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10109,7 +10109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8932856412996702715, guid: e0ff3931ff00805428bc8bfecced4a81, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Frog
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0ff3931ff00805428bc8bfecced4a81, type: 3}
@@ -10228,7 +10228,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8932856412996702715, guid: e0ff3931ff00805428bc8bfecced4a81, type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Frog
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e0ff3931ff00805428bc8bfecced4a81, type: 3}

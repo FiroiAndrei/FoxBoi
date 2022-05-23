@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DontDestroyCherries : MonoBehaviour
+public class DontDestroyDiamonds : MonoBehaviour
 {
     public void Awake()
     {
-        GameObject[] countCherriesObject = GameObject.FindGameObjectsWithTag("GameMusic");
+        GameObject[] countDiamondsCountObject = GameObject.FindGameObjectsWithTag("DiamondsCount");
         
-        if(countCherriesObject.Length > 1)
+        if(countDiamondsCountObject.Length > 1)
         {
             Destroy(this.gameObject);
         }

@@ -13490,7 +13490,7 @@ GameObject:
   - component: {fileID: 753890849}
   m_Layer: 2
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: DiamondsCount
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16135,7 +16135,7 @@ GameObject:
   - component: {fileID: 1449567809}
   m_Layer: 5
   m_Name: Diamond Count
-  m_TagString: Untagged
+  m_TagString: DiamondsCount
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

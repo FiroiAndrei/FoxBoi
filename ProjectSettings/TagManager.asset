@@ -13,6 +13,7 @@ TagManager:
   - StartMenu
   - Frog
   - Eagle
+  - DiamondsCount
   layers:
   - Default
   - TransparentFX

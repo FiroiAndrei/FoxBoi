@@ -20,7 +20,7 @@ Plus 2 membri care s-au retras din echipa :
 ■■■■ ■■■■■ ■■■■ (311)
 
 # Link Youtube
-https://youtu.be/-3cBYcXKZaQ
+https://youtu.be/CYp6ykJi9VY
 
 # Features
 

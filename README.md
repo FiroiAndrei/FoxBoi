@@ -31,4 +31,6 @@ https://youtu.be/CYp6ykJi9VY
 * Doua tipuri de trap-uri ce incetineste progresul jucatorului
 * Colectibile pretioase, puse in locuri greu accesibile, pentru a adauga un pic de adancime gameplay-ului
 * UI care are 3 butoane : "Start game", "Continue game", "Quit game"; Slide de volume care pastreaza preferinta jucatorului la fiecare nivel
-* 
+
+# Link PowerPoint
+https://docs.google.com/presentation/d/1lR1SmgGmFJ8tuu5BI2zdhY2K5U6KKIph/edit?usp=sharing&ouid=110923478042620094033&rtpof=true&sd=true
